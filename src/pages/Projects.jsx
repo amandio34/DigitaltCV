@@ -4,7 +4,7 @@ const About = () => {
   return (
     <main>
       <h1>Mina projekt</h1>
-      <section>
+      <section className="card3">
         <aside>
           <img src="src/images/solarisbild.png" alt="Solaris bild" />
           <h2>Solaris</h2>
@@ -41,7 +41,8 @@ const About = () => {
 
       <section>
           {/* Länkar till GitHub-profilen */}
-          <h1>Se mer på min <a href="https://github.com/amandio34">GitHub</a></h1>
+          <p></p>
+          <h2>Se mer på min <a href="https://github.com/amandio34">GitHub</a></h2>
       </section>
     </main>
   );

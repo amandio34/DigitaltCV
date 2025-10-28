@@ -22,16 +22,17 @@ const Contact = () => {
     <main>
       <h1>Kontakt</h1>
       <section>
-        <aside>
-          <h3>Telefonnummer</h3>
+        <p>Du kan nå mig via följande kontaktuppgifter:</p>
+        <aside className='contact'>
+          <h2>Telefonnummer</h2>
           <p>072 230 12 50</p>
         </aside>
-        <aside>
-          <h3>Mail</h3>
-          <p>amanda.andersson@student.kyh.se</p>
+        <aside className='contact'>
+          <h2>Mail</h2>
+          <p>amanda.andersson034@gmail.se</p>
         </aside>
-        <aside>
-          <h3>Adress</h3>
+        <aside className='contact'>
+          <h2>Adress</h2>
           <p>
             Lövlundsvägen 91B <br />
             814 91 Furuvik, Gävle

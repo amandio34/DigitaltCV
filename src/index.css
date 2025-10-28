@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
 /* Globala regler */
 * {
   margin: 0;
@@ -11,10 +13,11 @@ h1 {
 
 h2 {
   color: #d570e7;
+  margin-bottom: 2%;
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Merriweather', serif;
   line-height: 1.6;
   display: flex;
   justify-content: center;
@@ -71,25 +74,73 @@ body.dark .theme-button {
 
 section {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.card2 {
+  display: flex;
+
+  p {
+    padding-right: 3%;
+  }
+}
+
+.card3 {
+  display: flex;
   flex-direction: row;
   gap: 20px;
+  text-align: left;
 }
 
 aside {
   flex: 1;
-  padding: 10px;
+  padding: 3% 0% 5% 3%;
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
-   p {
-    padding-bottom: 7%;
-   }
+
+  p {
+    padding-bottom: 5%;
+  }
+}
+
+.contact {
+  padding: 1%;
+  padding-bottom: 0%;
+
+  p {
+    padding-bottom: 2%;
+  }
+
+  h2 {
+    margin: 1%;
+  }
 }
 
 img {
-  width: 100%;  
-  height: auto;  
+  max-width: 90%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  border-radius: 2%;
+}
+
+.cvbild {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: aqua;
+
+  img {
+    max-height: 20%;
+    align-items: center;
+  }
 }
 
 .feedbackForm {
@@ -98,10 +149,10 @@ img {
   flex-direction: column;
 }
 
-/* Mobilanpassning */
-@media (max-width: 600px) {
+/* Mobil/tablet anpassning */
+@media (max-width: 800px) {
   nav ul {
-    flex-direction:row; /* Ändra layout till en kolumn */
+    flex-direction: row;
     align-items: center;
   }
 
@@ -110,7 +161,19 @@ img {
     padding: 10px;
   }
 
-  section {
+  .app {
+    width: 95%;
+    height: 90vh;
+    padding: 2%;
+    margin: auto;
+    font-size: smaller;
+  }
+
+  section,
+  aside,
+  .card3 {
     flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
 }
